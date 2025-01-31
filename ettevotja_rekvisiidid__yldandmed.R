@@ -4,7 +4,7 @@ library(readr)
 library(dplyr)
 
 fileName <- "ettevotja_rekvisiidid__yldandmed.xml"
-output_file <- "ettevotja_rekvisiidid__yldandmed.xml"
+output_file <- "ettevotja_rekvisiidid__yldandmed.csv"
 
 # Number of sections to process (for example, limit to first 10 sections)
 batch_amount <- 1000
