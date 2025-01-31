@@ -118,7 +118,7 @@ for (line in lines) {
         
         # Export data and refresh object
         setcolorder(empty_object, c("ariregistri_kood", "nimi"))
-        write_csv(empty_object, output_file, append = TRUE)
+        write_csv(empty_object, output_file, append = file.exists(output_file), col_names = !file.exists(output_file))
         
         # Resetting object
         empty_object <- final_data
