@@ -7,7 +7,7 @@ This R script is designed to convert the eBusiness Register open data from XML t
 Processing large XML files in R can be challenging due to memory limitations. The XML files provided by the eBusiness Register can reach multiple gigabytes in size, making it difficult to load them entirely into memory. This script solves that problem by reading the XML data line by line and processing each company entry individually. While this approach is inefficient in terms of processing time, it significantly reduces memory usage, requiring only about 1.5GB of RAM.
 
 ## Performance
-- The conversion of the largest file takes approximately **3.5 hours** on an older laptop with **16GB of RAM** (scripts use about ~1.5GB of RAM).
+- The conversion of the largest file takes approximately **3.5 hours** on an older laptop with **16GB of RAM** (scripts use up to 8GB of RAM).
 - Smaller files should take proportionally less time.
 - The processing speed is primarily limited by the **line-by-line reading method**, rather than batch size.
 
